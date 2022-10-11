@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>checkout</title>
+</head>
+<body>
+    <div class="summary">
+        <div class="summary-box">
+            <h2>SUMMARY</h2>
+            <div class="items">
+                <img src="./images/Rectangle 2.png" alt="Rolex">
+                <p class="description">Men’s Watches (Rolex) brown, 1pc</p>
+                <span class="right">N4000</span>
+            </div>
+            <div class="items">
+                <img src="./images/Rectangle 3.png" alt="Willys Shoes">
+                <p class="description">Willys Shoes , black size 44 1 pc</p>
+                <span class="right">N6000</span>
+            </div>
+            <div class="items">
+                <img src="./images/Rectangle 4.png" alt="Buddy black Sun Shades">
+                <p class="description">Buddy Black Sun Shades 1 pc</p>
+                <span class="right">N8000</span>
+            </div>
+            <div class="total"><h2>Total</h2><span class="right">N18000</span></div>
+        </div>
+    </div>
+    <div class="checkout">
+        <div class="checkout-box">
+            <img src="./images/Frame 2.png" alt="debit/credit card">
+            <img src="./images/Frame 3.png" alt="paypal">
+            <img src="./images/Frame 4.1.png" alt="gift card">
+        </div>
+        <div class="address">
+            <h3>Default Address</h3>
+            <p>No 23 obiagu street enugu , enugu state Nigeria</p>
+        </div>
+        <form action="./confirm.html" target="_blank" method="post">
+            <input type="text" id="cardNumber" placeholder="Card Number">
+            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="validDate" placeholder="Valid Date">
+            <input type="text" id="cvv" placeholder="CVV">
+        </form>
+        <div class="button" >
+            <button class="cancel">Cancel</button>
+            <button class="finish" id="myBtn">Finish</button>
+        </div>
+    </div>
+    <script>
+        document.getElementById("myBtn").addEventListener("click", myFunction);
+        function myFunction() {
+            window.location.href = "./confirm.html";
+        }
+    </script>
+</body>
+</html>
